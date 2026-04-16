@@ -1,67 +1,189 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<!-- saved from url=(0055)https://kepler.lamar.edu/~sandrei/Scheduling/index.html -->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Algorithm A</title>
-  <meta name="description" content="free website template">
-  <meta name="keywords" content="enter your keywords here">
-  
-  <link rel="stylesheet" type="text/css" href="./index_files/style.css">
-  <script type="text/javascript" src="./index_files/jquery.min.js"></script>
-  <script type="text/javascript" src="./index_files/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="./index_files/jquery.nivo.slider.pack.js"></script>
-  <script type="text/javascript">
-    $(window).load(function() {
-        $('#slider').nivoSlider();
-    });
-  </script> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Project - CIS492 RTE Group 4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        #main {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        #menubar {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #welcome h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        #welcome h1 a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #menu_items {
+            margin-top: 15px;
+        }
+
+        #menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        #menu li {
+            display: inline;
+        }
+
+        #menu li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 8px 15px;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        #menu li a:hover,
+        #menu li.current a {
+            background-color: #e67e22;
+            color: #fff;
+        }
+
+        #site_content {
+            padding: 40px;
+            min-height: 500px;
+        }
+
+        #content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .content_item h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #e67e22;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content_item h2 {
+            color: #34495e;
+            margin: 20px 0 10px 0;
+        }
+
+        .content_item p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        .info-box {
+            background-color: #ecf0f1;
+            border-left: 5px solid #e67e22;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .info-box h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        #footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        #footer a {
+            color: #e67e22;
+            text-decoration: none;
+        }
+
+        #footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            #site_content {
+                padding: 20px;
+            }
+            
+            #menu {
+                gap: 15px;
+            }
+            
+            #menu li a {
+                font-size: 0.9em;
+                padding: 5px 10px;
+            }
+            
+            #welcome h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <div id="main">
+    <div id="main">
+        <div id="menubar">
+            <div id="welcome">
+                <h1><a href="index.html">Real-Time Embedded Systems Project -- Group 4</a></h1>
+            </div>
+            <div id="menu_items">
+                <ul id="menu">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="people.html">People</a></li>
+                </ul>
+            </div>
+        </div>
 
-	<div id="menubar">
-	  <div id="welcome">
-	    <h1><a href="https://kepler.lamar.edu/~sandrei/Scheduling/index.html">Algorithm A</a></h1>
-	  </div><!--close welcome-->
-      <div id="menu_items">
-	    <ul id="menu">
-          <li class="current"><a href="https://kepler.lamar.edu/~sandrei/Scheduling/index.html">Home</a></li>
-          <li><a href="https://kepler.lamar.edu/~sandrei/Scheduling/project.html">Project</a></li>
-          <li><a href="https://kepler.lamar.edu/~sandrei/Scheduling/testresult.html">TestCases</a></li>
-          <li><a href="https://kepler.lamar.edu/~sandrei/Scheduling/people.html">People</a></li>
-          <li><a href="https://kepler.lamar.edu/~sandrei/Scheduling/pictures.html">Pictures</a></li>
-          <li><a href="https://kepler.lamar.edu/~sandrei/Scheduling/contact.html">Contact Us</a></li>
-        </ul>
-      </div><!--close menu-->
-    </div><!--close menubar-->	
+        <div id="site_content">
+            <div id="content">
+                <div class="content_item">
+                    <h1>Welcome to Our Class Project</h1>
+                    
+                    <p>This website showcases our class project for the Real-Time Embedded Systems course at Cleveland State University.</p>
     
-	<div id="site_content">		
+                    <div class="info-box">
+                        <h3>Learn More</h3>
+                        <p>Check out our <a href="project.html" style="color: #e67e22;">Project</a> page for detailed methodology and results, or visit the <a href="people.html" style="color: #e67e22;">People to see who worked on this</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	  <div id="banner_image">
-	    <div id="slider-wrapper">        
-          <div id="slider" class="nivoSlider" style="position: relative; background: url(&quot;images/home_2.jpg&quot;) no-repeat;">
-            <img src="./index_files/home_1.jpg" alt="" style="display: none;">
-            <img src="./index_files/home_2.jpg" alt="" style="display: none;">
-		  <div class="nivo-caption" style="display: none; opacity: 0;"><p></p></div><div class="nivo-directionNav" style="display: none;"><a class="nivo-prevNav">Prev</a><a class="nivo-nextNav">Next</a></div><div class="nivo-controlNav"><a class="nivo-control active" rel="0">1</a><a class="nivo-control" rel="1">2</a></div><div class="nivo-box" style="opacity: 1; left: 0px; top: 0px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) 0px 0px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 115px; top: 0px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -115px 0px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 230px; top: 0px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -230px 0px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 345px; top: 0px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -345px 0px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 460px; top: 0px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -460px 0px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 575px; top: 0px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -575px 0px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 690px; top: 0px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -690px 0px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 805px; top: 0px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -805px 0px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 0px; top: 100px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) 0px -100px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 115px; top: 100px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -115px -100px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 230px; top: 100px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -230px -100px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 345px; top: 100px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -345px -100px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 460px; top: 100px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -460px -100px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 575px; top: 100px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -575px -100px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 690px; top: 100px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -690px -100px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 805px; top: 100px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -805px -100px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 0px; top: 200px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) 0px -200px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 115px; top: 200px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -115px -200px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 230px; top: 200px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -230px -200px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 345px; top: 200px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -345px -200px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 460px; top: 200px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -460px -200px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 575px; top: 200px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -575px -200px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 690px; top: 200px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -690px -200px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 805px; top: 200px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -805px -200px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 0px; top: 300px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) 0px -300px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 115px; top: 300px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -115px -300px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 230px; top: 300px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -230px -300px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 345px; top: 300px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -345px -300px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 460px; top: 300px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -460px -300px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 575px; top: 300px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -575px -300px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 690px; top: 300px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -690px -300px no-repeat; display: block;"></div><div class="nivo-box" style="opacity: 1; left: 805px; top: 300px; width: 115px; height: 100px; background: url(&quot;images/home_1.jpg&quot;) -805px -300px no-repeat; display: block;"></div></div><!--close slider-->
-		</div><!--close slider_wrapper-->
-	  </div><!--close banner_image--><!--close sidebar_container-->		  
-	 
-	  <div id="content">
-        <div class="content_item">
-		  <h1>Abstract</h1>
-		  <p>One of the core problems in real-time systems is finding a feasible schedule for a task set on a multiprocessor platform. While preemptive scheduling has benefited from a large number of significant results, the non-preemptive case has still room for improvement.Despite the fact that the well-known EDF and LLF scheduling techniques are optimal for preemptive uniprocessor platform there is no known optimal scheduling algorithm for 
-non-preemptive task sets on a multi-processor platform. </p><p>Our paper continues our previous works [1] and [2] by describing the experimental results together with their findings about our alternate scheduling method to the EDF and LLF techniques.Our algorithm, called A, is able to schedule all considered non-preemptive independent tasks 
-		    on a multi-processor platform, while EDF and LLF fail to sometimes provide a feasible schedule. The experiments indicate no execution time overhead for the cases where all the scheduling algorithms were able to provide the schedule. However, when EDF and LLF fail to provide a schedule, A gives the schedule with a 60% execution time overhead</p>
-<!--close content_container--><!--close content_container--><!--close content_container--><!--close content_container-->			  
-		</div><!--close content_item-->
-      </div>
-	</div><!--close site_content--> 
-  
-  </div><!--close main-->
-  
- <div id="footer">
-	  <h4> <a href="https://kepler.lamar.edu/~sandrei/Scheduling/index.html#">Department of Computer Science | Lamar University</a></h4>
-  </div><!--close footer-->  
-
-
-</body></html>
+        <div id="footer">
+            <h4><a href="#">Department of Computer Science | Cleveland State University </a></h4>
+            <p style="margin-top: 10px;">© 2026 RTE Group 4 - Class Project</p>
+        </div>
+    </div>
+</body>
+</html>
